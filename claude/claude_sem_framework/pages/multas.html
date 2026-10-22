@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Multas · Lost Wild</title><link rel="icon" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-root="../" data-page="multas">
+<main id="main" class="wrap sec"><div class="page-head"><h1>Multas</h1></div><div id="summary" aria-live="polite"></div><div class="cols"><div><h2>Pendentes</h2><div id="open"></div><div id="payBox" style="margin-top:1rem"></div><h2 style="margin-top:2rem">Quitadas</h2><div id="paid"></div></div><div><h2>Tabela de valores</h2><table><caption class="small mute" style="text-align:left;padding-bottom:.5rem">Cobrança por dia de atraso, por filme</caption><tr><th>Situação</th><th>Valor</th></tr><tr><td>1 a 3 dias</td><td>R$ 2,00 por dia</td></tr><tr><td>A partir do 4º dia</td><td>R$ 4,00 por dia</td></tr><tr><td>Multas somam <span id="limit"></span> ou mais</td><td>Conta bloqueada</td></tr><tr><td>Mais de <span id="maxDays"></span> dias de atraso</td><td>Conta bloqueada</td></tr></table><p class="small mute" style="margin-top:1rem">Conta bloqueada não aluga nem compra até quitar tudo.</p></div></div><p class="small mute" style="margin-top:3rem">Demonstração: <button class="btn sm" id="skip">Avançar 7 dias no tempo</button> para ver multas acumulando e o bloqueio da conta.</p></main>
+<script src="../js/data.js"></script><script src="../js/app.js"></script><script src="../js/multas.js"></script>
+</body></html>

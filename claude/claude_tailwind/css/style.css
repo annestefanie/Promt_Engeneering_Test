@@ -1,0 +1,25 @@
+/* Lost Wild — tokens e efeitos que o Tailwind não cobre */
+:root{--ink:#050807;--moss:#1c3a1c;--teal:#448690;--ember:#d14a1b;--blood:#8f160c;--paper:#e9e2d0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--paper);font-family:'Archivo',sans-serif;line-height:1.6}
+.serif{font-family:'Instrument Serif',serif;font-weight:400}
+.grain::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:70;opacity:.13;mix-blend-mode:overlay;
+ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence baseFrequency='.85' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.halo{text-shadow:0 0 18px rgba(209,74,27,.55),0 0 2px rgba(209,74,27,.9)}
+.bg-glow{background:radial-gradient(60% 50% at 50% 40%,rgba(28,58,28,.55),transparent 70%),radial-gradient(40% 40% at 85% 80%,rgba(143,22,12,.35),transparent 70%)}
+.skip{position:absolute;left:-999px;background:var(--paper);color:var(--ink);padding:.5rem 1rem;z-index:100}
+.skip:focus{left:1rem;top:1rem}
+:focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:2px}
+.poster{aspect-ratio:2/3;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:.8rem;
+ border:1px solid rgba(233,226,208,.18);box-shadow:0 12px 30px -12px #000;transition:transform .45s cubic-bezier(.2,.8,.2,1),filter .3s}
+.poster::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.18),transparent 55%);mix-blend-mode:screen}
+.poster b{font-family:'Instrument Serif',serif;font-weight:400;font-size:1.55rem;line-height:1;position:relative}
+.poster span{font-size:.7rem;opacity:.85;position:relative}
+.film:hover .poster,.film:focus-within .poster{transform:rotate(-2deg) translateY(-6px);filter:saturate(1.2)}
+.collage .poster{position:absolute;width:clamp(78px,15vw,130px);padding:.45rem}
+.collage .poster b{font-size:.8rem}.collage .poster span{display:none}
+.tab[aria-selected=true]{border-color:var(--ember);color:var(--paper)}
+dialog{background:#0b110c;color:var(--paper);border:1px solid rgba(233,226,208,.25);max-width:30rem;width:92%;padding:1.5rem}
+dialog::backdrop{background:rgba(0,0,0,.75)}
+#cart{transition:transform .35s ease}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}

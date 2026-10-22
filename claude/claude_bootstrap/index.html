@@ -1,0 +1,22 @@
+<!doctype html><html lang="pt-BR" data-bs-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Entrar — Lost Wild</title>
+<meta name="description" content="Lost Wild: locadora de clássicos raros em DVD. Alugue ou compre online.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body data-root="" data-page="auth" class="grain min-vh-100"><a href="#main" class="skip">Ir para o conteúdo</a><div id="app-header"></div>
+<main id="main" class="bg-glow min-vh-100 container d-flex align-items-center"><div class="row align-items-center g-5 w-100 py-5">
+ <section class="col-md-6"><h1 class="serif halo lh-1" style="font-size:clamp(4rem,14vw,7.5rem)">Lost<br><i>Wild</i></h1>
+  <p class="mt-4 text-secondary" style="max-width:24rem">Clássicos que sumiram das prateleiras, de volta em DVD. Alugue por 5 dias ou leve para casa.</p></section>
+ <section class="col-md-6" aria-labelledby="auth-title"><div class="border rounded p-4 bg-black bg-opacity-50">
+  <h2 id="auth-title" class="visually-hidden">Acesse sua conta</h2>
+  <div role="tablist" class="nav nav-tabs mb-4"><button role="tab" class="tab nav-link" data-mode="login">Entrar</button><button role="tab" class="tab nav-link" data-mode="register">Criar conta</button></div>
+  <form id="auth-form" class="d-grid gap-3" novalidate>
+   <div id="name-wrap" hidden><label for="name" class="form-label small">Nome</label><input id="name" autocomplete="name" class="form-control"></div>
+   <div><label for="email" class="form-label small">E-mail</label><input id="email" type="email" autocomplete="email" class="form-control"></div>
+   <div><label for="pass" class="form-label small">Senha</label><input id="pass" type="password" class="form-control">
+    <button type="button" id="toggle-pass" aria-pressed="false" class="btn btn-link btn-sm px-0">Mostrar senha</button>
+    <ul id="rules" hidden class="small text-secondary list-unstyled mb-0"><li data-t="8 caracteres ou mais">• 8 caracteres ou mais</li><li data-t="uma letra maiúscula">• uma letra maiúscula</li><li data-t="um número">• um número</li></ul></div>
+   <p id="auth-msg" class="text-danger mb-0" role="alert"></p>
+   <button id="submit" class="btn btn-ember py-2">Entrar</button>
+   <button type="button" id="google" class="btn btn-paper py-2">Continuar com Google (simulado)</button>
+  </form></div></section></div></main>
+<div id="app-footer"></div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/data.js"></script><script src="js/store.js"></script><script src="js/layout.js"></script><script src="js/auth.js"></script></body></html>

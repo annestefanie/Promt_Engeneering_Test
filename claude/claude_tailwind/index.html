@@ -1,0 +1,22 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Entrar — Lost Wild</title>
+<meta name="description" content="Lost Wild: locadora de clássicos raros em DVD. Alugue ou compre online.">
+<script src="https://cdn.tailwindcss.com"></script><script src="js/tailwind-config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body data-root="" data-page="auth" class="grain min-h-screen"><a href="#main" class="skip">Ir para o conteúdo</a><div id="app-header"></div>
+<main id="main" class="bg-glow min-h-screen grid md:grid-cols-2 items-center gap-10 px-5 py-12 max-w-6xl mx-auto">
+ <section><h1 class="serif text-6xl sm:text-8xl halo leading-[.9]">Lost<br><i>Wild</i></h1>
+  <p class="mt-6 max-w-sm text-paper/80">Clássicos que sumiram das prateleiras, de volta em DVD. Alugue por 5 dias ou leve para casa.</p></section>
+ <section class="border border-paper/25 bg-ink/70 p-6" aria-labelledby="auth-title">
+  <h2 id="auth-title" class="sr-only">Acesse sua conta</h2>
+  <div role="tablist" class="flex gap-4 mb-5"><button role="tab" class="tab border-b-2 border-transparent pb-1 text-paper/70" data-mode="login">Entrar</button><button role="tab" class="tab border-b-2 border-transparent pb-1 text-paper/70" data-mode="register">Criar conta</button></div>
+  <form id="auth-form" class="grid gap-4" novalidate>
+   <div id="name-wrap" hidden><label for="name" class="block text-sm mb-1">Nome</label><input id="name" autocomplete="name" class="w-full bg-ink border border-paper/40 p-2"></div>
+   <div><label for="email" class="block text-sm mb-1">E-mail</label><input id="email" type="email" autocomplete="email" class="w-full bg-ink border border-paper/40 p-2"></div>
+   <div><label for="pass" class="block text-sm mb-1">Senha</label><input id="pass" type="password" class="w-full bg-ink border border-paper/40 p-2">
+    <button type="button" id="toggle-pass" aria-pressed="false" class="text-sm underline mt-1">Mostrar senha</button>
+    <ul id="rules" hidden class="text-sm text-paper/70 mt-2"><li data-t="8 caracteres ou mais">• 8 caracteres ou mais</li><li data-t="uma letra maiúscula">• uma letra maiúscula</li><li data-t="um número">• um número</li></ul></div>
+   <p id="auth-msg" class="text-ember" role="alert"></p>
+   <button id="submit" class="bg-ember text-ink font-bold py-3 hover:bg-paper transition-colors">Entrar</button>
+   <button type="button" id="google" class="border border-paper/40 py-3 hover:bg-paper hover:text-ink transition-colors">Continuar com Google (simulado)</button>
+  </form></section></main>
+<div id="app-footer"></div><script src="js/data.js"></script><script src="js/store.js"></script><script src="js/layout.js"></script><script src="js/auth.js"></script></body></html>

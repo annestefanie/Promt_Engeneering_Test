@@ -1,0 +1,19 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Filmes — Lost Wild</title>
+<meta name="description" content="Lost Wild: locadora de clássicos raros em DVD. Alugue ou compre online.">
+<script src="https://cdn.tailwindcss.com"></script><script src="../js/tailwind-config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body data-root="../" data-page="home" class="grain min-h-screen"><a href="#main" class="skip">Ir para o conteúdo</a><div id="app-header"></div>
+<main id="main" class="max-w-6xl mx-auto px-5">
+ <section class="bg-glow py-10 text-center" aria-labelledby="h1">
+  <div id="collage" class="collage relative mx-auto h-[360px] sm:h-[480px] max-w-xl">
+   <div class="absolute inset-[28%] bg-black grid place-items-center p-3"><div><h1 id="h1" class="serif text-3xl sm:text-4xl halo leading-none">Olá, <span id="user-name"></span></h1><p class="text-xs sm:text-sm mt-2 text-paper/80">Hoje a prateleira tem filmes que você não acha em mais lugar nenhum.</p></div></div></div>
+ </section>
+ <section aria-label="Buscar filmes" class="sticky top-[57px] z-30 bg-ink/95 py-3">
+  <label for="search" class="sr-only">Buscar por título ou diretor</label>
+  <input id="search" type="search" placeholder="Buscar por título ou diretor" class="w-full bg-ink border border-paper/40 p-3">
+  <div class="flex flex-wrap items-center gap-2 mt-3"><div id="chips" class="flex flex-wrap gap-2" role="group" aria-label="Gêneros"></div>
+   <button id="wish-filter" aria-pressed="false" class="border border-ember text-ember px-3 py-1 text-sm aria-pressed:bg-ember aria-pressed:text-ink">♥ Minha lista</button></div>
+  <p id="count" class="text-sm text-paper/70 mt-2" aria-live="polite"></p></section>
+ <ul id="grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 mt-6"></ul>
+</main>
+<div id="app-footer"></div><script src="js/data.js"></script><script src="js/store.js"></script><script src="js/layout.js"></script><script src="js/home.js"></script></body></html>
