@@ -53,6 +53,18 @@ Interactivity: Create simple yet engaging transitions and hover effects that enh
 
 Architecture: HTML, CSS, and JS files should be placed in the root folder, with separate folders for the other pages on the site and for the assets.
 
-## What I learned
+## References
+
+<div>
+  <img src="assets/paleta de cores 1.jpg" style="width:300px;"></img>
+  <img src="assets/paleta de cores 2.jpg" style="width:300px;"></img>
+  <img src="assets/paleta de cores 3.jpg" style="width:300px;"></img>
+  <img src="assets/referencias 1.jpg" style="width:300px;"></img>
+  <img src="assets/referencias 2.jpg" style="width:300px;"></img>
+</div>
+
+## What I Learned
+
+## Conclusion
 
 
